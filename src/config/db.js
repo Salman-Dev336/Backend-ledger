@@ -8,4 +8,10 @@ const mongoose = require("mongoose")
         console.log("server connected to DB");
         
     })
+    .catch(err=>{
+        console.log("Error connecting to DB")
+        process.exit(1)
+    })
  }
+
+ module.exports = connectDB
