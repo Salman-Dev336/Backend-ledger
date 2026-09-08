@@ -1,10 +1,10 @@
 const express = require("express")
-const { userRegisterController } = require("../controllers/auth.controller")
+const authController = require("../controllers/auth.controller")
 
 const router = express.Router()
 
-
-router.post("/register", userRegisterController)
+/* POST /api/auth/Rehister */
+router.post("/register")
 
 
 
