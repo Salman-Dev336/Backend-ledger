@@ -53,9 +53,9 @@ async function userLoginController(req, res){
       status: "failed"
     })
   }
-  const isValidPassword = user.comparedPassword(password)
+  const isValidPassword = user.comparePassword(password)
 
-  if(!isValidPasswowrd){
+  if(!isValidPassword){
     return res.status(401).json({
       message: "invalid credentials",
       status: "failed"
