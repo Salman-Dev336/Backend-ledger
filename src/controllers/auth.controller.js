@@ -38,4 +38,14 @@ async function userRegisterController(req, res) {
   })
 }
 
+/**
+ * -user login controller
+ * -POST/api/login
+ */
+async function userLoginController(req, res){
+  
+
+}
+
+
 module.exports = { userRegisterController };
